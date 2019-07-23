@@ -1,0 +1,114 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+
+            
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
+	<ui:style gss="true">
+        body {
+            background:url("https://media.gettyimages.com/photos/woman-filling-out-voting-document-picture-id598869882?s=2048x2048") ;
+            background-position:center;
+            background-size:cover;
+            background-attachment:"fixed";
+       
+        }
+    </ui:style>
+	<g:HTMLPanel>
+ <m:MaterialPanel>
+        <m:MaterialHeader ui:field="header">
+            <m:MaterialNavBar layoutPosition="FIXED" ui:field="navBar" activates="sidenavNavShrink" backgroundColor="PINK_ACCENT_1" shadow="1">
+                <m:MaterialNavBrand fontSize="2.2em" paddingLeft="60" text="Voting elevator" />
+                <m:MaterialNavSection float="RIGHT">
+                    <m:MaterialLink iconType="APPS" />
+                    <m:MaterialLink iconType="REFRESH" />
+                </m:MaterialNavSection>
+                <m:MaterialFAB ui:field="fab" layoutPosition="ABSOLUTE" right="60" bottom="-32">
+                    <m:MaterialButton type="FLOATING" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/blob/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/sidenavcard/CardSideNavView.ui.xml" target="_blank" backgroundColor="PINK" size="LARGE" iconType="CODE" />
+                </m:MaterialFAB>
+            </m:MaterialNavBar>
+        </m:MaterialHeader>
+
+        <m:MaterialSideNavPush m:id="sidenavNavShrink" ui:field="sideNav" width="300">
+            
+            
+              <m:MaterialImage type="CIRCLE" url="data:image/png;base64,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" />
+            <m:MaterialNavBrand text="Menu"/>
+           
+            <m:MaterialLink ui:field="b5" iconType="HOME" text="Home"/>
+<!--             <m:MaterialLink iconType="PEOPLE" text="Login"/> -->
+				
+				
+
+				<!-- <m:MaterialLink  text="login" iconType="PEOPLE"  activates="dp-2"/>
+				
+				
+				<m:MaterialDropDown activator="dp-2" 				constrainWidth="true"> 
+				<m:MaterialLink 	ui:field="b1" 				text="BLO-LOGIN" />
+				<m:MaterialLink		ui:field="b2" 			 text="SECTOR-LOGIN" />
+             </m:MaterialDropDown> -->
+             
+             
+             
+            
+				
+            
+             
+<!--             <m:MaterialLink iconType="ADD" text="Register"/> -->
+         
+         
+  
+            <m:MaterialLink iconType="PHONE" text="Contact_us"/>
+        <m:MaterialLink iconType="INFO_OUTLINE" text="About_us"/>
+            
+            
+           <!--  <m:MaterialLink  text="REGISTER" iconType="ADD"  activates="dp-3"/>
+				
+				<m:MaterialDropDown activator="dp-3" constrainWidth="true"> 
+				<m:MaterialLink	 ui:field="b3"					 text="BLO-REGISTRATION" />
+				<m:MaterialLink  ui:field="b4"								text="SECTOR-REGISTRATION" />
+             </m:MaterialDropDown>
+              -->
+              <m:MaterialCollapsible ui:field="colaps" accordion="true">
+              <m:MaterialCollapsibleItem 	ui:field="item">
+          <m:MaterialCollapsibleHeader>
+			<m:MaterialLink  text="login" iconType="PEOPLE"  activates="dp-2"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+          <m:MaterialDropDown activator="dp-2" 				constrainWidth="true"> 
+				<m:MaterialLink 	ui:field="b1" 				text="BLO-LOGIN" />
+				<m:MaterialLink		ui:field="b2" 			 text="SECTOR-LOGIN" />
+				<m:MaterialLink		ui:field="b6" 			 text="VIDHANSABHA-LOGIN" />
+             </m:MaterialDropDown> 
+          
+           
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+             
+             <m:MaterialCollapsibleItem ui:field="seconditem">
+          <m:MaterialCollapsibleHeader>
+			<m:MaterialLink  text="registration" iconType="ADD"  activates="dp-3"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+          <m:MaterialDropDown activator="dp-3" 				constrainWidth="true"> 
+				<m:MaterialLink 	ui:field="b3" 				text="BLO-REGISTRATION" />
+				<m:MaterialLink		ui:field="b4" 			 text="SECTOR-REGISTRATION" />
+				<m:MaterialLink		ui:field="b7" 			 text="VIDHANSABHA-REGISTRATION" />
+             </m:MaterialDropDown> 
+          
+           
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        </m:MaterialCollapsible>
+             
+             
+        </m:MaterialSideNavPush>
+ 
+      <!--  <m:MaterialContainer height="1600px" paddingTop="35"> 
+             <m:MaterialRow textAlign="CENTER" paddingTop="40"> 
+     <m:MaterialImage url="https://media.gettyimages.com/photos/woman-filling-out-voting-document-picture-id598869882?s=2048x2048" width="100%" height="100%" /> 
+             </m:MaterialRow> 
+        </m:MaterialContainer>  -->
+    </m:MaterialPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

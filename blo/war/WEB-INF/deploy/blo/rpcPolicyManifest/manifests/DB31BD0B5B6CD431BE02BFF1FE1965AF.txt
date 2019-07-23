@@ -1,0 +1,2 @@
+serviceClass: com.blo.client.GreetingService
+path: 4E282DE2709FA753BA4BCEB80DFF9AB9.gwt.rpc

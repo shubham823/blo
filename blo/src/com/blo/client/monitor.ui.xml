@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+<m:MaterialPanel>
+	<m:MaterialContainer height="1600px" paddingTop="100" paddingLeft="350" >
+	<m:MaterialRow>
+      
+      <m:MaterialButton text="blos under you" ui:field="setActive" />
+      <m:MaterialCollapsible accordion="true" ui:field="maco"/>
+      </m:MaterialRow>
+	</m:MaterialContainer>
+	</m:MaterialPanel>>
+	</g:HTMLPanel>
+</ui:UiBinder> 
