@@ -1,0 +1,7 @@
+Databses
+Database name: vote
+Tables:blo,crawl2,memeber,otp,sector,vidhan
+Blo:create table blo(name varchar(20),wardnumber varchar(20),address varchar(20),phonenumber varchar(20),email varchar(20),password varchar(20));
+crawl2:create table crawl2(epicno varchar(20),name varchar(20),fname varchar(20),address varchar(20),gender varchar(20),partno varchar(20),satus varchar(20),blo varchar(20));
+Member:create table Member(name varchar(20),org varchar(20),address varchar(20),phone varchar(20),email varchar(20),password varchar(20));
+Otp:create table otp(ph varchar(20),name varchar(20),status varchar(20),epicno varchar(20),otp varchar(20));
